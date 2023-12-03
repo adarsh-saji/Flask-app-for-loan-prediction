@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Automobile Loan Default Prediction</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        
+        .input-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            width: 48%; /* Adjust as needed */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .input.form {
+                width: 80%;
+            }
+            .input-columns {
+                flex-direction: column;
+            }
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body background="/static/images/background.jpg">
+    <!-- Input Form -->
+    <div class="input form">
+        <form action="/prediction" method="post" id="input_form">
+            <h1 id="heading">Automobile Loan Default Prediction</h1>
+            <div class="input-columns">
+                <div class="column">
+                    
+                    
+                     <label for="Client_Income">Client Income:</label>
+                     <input type="text" name="Client_Income" placeholder="Client Income" required>
+                     <br><br>
+                     
+                     <label for="Active_Loan">Active Loan:</label>
+                     <input type="text" name="Active_Loan" placeholder="Active Loan" required>
+                     <br><br>
+                     
+                     <label for="House_Own">House Own:</label>
+                     <input type="text" name="House_Own" placeholder="House Own" required>
+                     <br><br>
+                     
+                     <label for="Credit_Amount">Credit Amount:</label>
+                     <input type="text" name="Credit_Amount" placeholder="Credit Amount" required>
+                     <br><br>
+                     
+                     <label for="Loan_Annuity">Loan Annuity:</label>
+                     <input type="text" name="Loan_Annuity" placeholder="Loan Annuity" required>
+                     <br><br>
+                     
+                     <label for="Client_Income_Type">Client Income Type:</label>
+                     <input type="text" name="Client_Income_Type" placeholder="Client Income Type" required>
+                     <br><br>
+                     
+                     <label for="Client_Education">Client Education:</label>
+                     <input type="text" name="Client_Education" placeholder="Client Education" required>
+                     <br><br>
+                     
+                     <label for="Client_Marital_Status">Client Marital Status:</label>
+                     <input type="text" name="Client_Marital_Status" placeholder="Client Marital Status" required>
+                     <br><br>
+                     
+                     
+                </div>
+                <div class="column">
+                
+                    
+                    <label for="Client_Gender">Client Gender:</label>
+                    <input type="text" name="Client_Gender" placeholder="Client Gender" required>
+                    <br><br>
+                     <label for="Loan_Contract_Type">Loan Contract Type:</label>
+                     <input type="text" name="Loan_Contract_Type" placeholder="Loan Contract Type" required>
+                     <br><br>
+                     
+                     <label for="Age_Days">Age Days:</label>
+                     <input type="text" name="Age_Days" placeholder="Age Days" required>
+                     <br><br>
+                     
+                     <label for="Employed_Days">Employed Days:</label>
+                     <input type="text" name="Employed_Days" placeholder="Employed Days" required>
+                     <br><br>
+                     
+                     <label for="Client_Occupation">Client Occupation:</label>
+                     <input type="text" name="Client_Occupation" placeholder="Client Occupation" required>
+                     <br><br>
+                     
+                     <label for="Type_Organization">Type Organization:</label>
+                     <input type="text" name="Type_Organization" placeholder="Type Organization" required>
+                     <br><br>
+                     
+                     <label for="Vehicle_Owned">Vehicle Owned:</label>
+                     <input type="text" name="Vehicle_Owned" placeholder="Vehicle Owned" required>
+                     <br><br>
+                     
+                     <label for="Family_Members">Family Members:</label>
+                     <input type="text" name="Family_Members" placeholder="Family Members" required>
+                     <br><br>
+                </div>
+            </div>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
